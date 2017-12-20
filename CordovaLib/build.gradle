@@ -65,6 +65,10 @@ android {
             assets.srcDirs = ['assets']
         }
     }
+    
+    lintOptions {
+        abortOnError false
+    }
 
     packagingOptions {
         exclude 'META-INF/LICENSE'
