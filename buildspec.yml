@@ -18,11 +18,11 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - ./gradlew build
+      - ./gradlew assembleDebug
   post_build:
     commands:
       - echo Build completed on `date`
 artifacts:
   files:
-    - '**/*'
+    - app/build/outputs/apk/app-debug.apk
   discard-paths: yes
